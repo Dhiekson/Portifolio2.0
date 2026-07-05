@@ -23,12 +23,11 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-      - run: rm -rf docs && mkdir docs && cp -r out/* docs/
-      - run: echo "" > docs/.nojekyll
+      - run: ls -R out   # debug (opcional mas útil)
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: docs
+          path: out
 
   deploy:
     needs: build
