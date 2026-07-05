@@ -27,7 +27,6 @@ const technologies = [
   { name: 'TypeScript', icon: SiTypescript },
   { name: 'JavaScript', icon: SiJavascript },
   { name: 'Python', icon: SiPython },
-  { name: 'PHP', icon: SiPhp },
   { name: 'Node.js', icon: SiNodedotjs },
   { name: 'Supabase', icon: SiSupabase },
   { name: 'PostgreSQL', icon: SiPostgresql },

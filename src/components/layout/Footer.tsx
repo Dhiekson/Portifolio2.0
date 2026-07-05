@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="flex flex-col items-center gap-6">
           <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} Dhiekson Nunes. Todos os direitos reservados.
+            © {new Date().getFullYear()} Dhiekson Quintiliano. Todos os direitos reservados.
           </p>
         </div>
       </div>
