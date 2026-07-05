@@ -1,0 +1,14 @@
+{
+  "files.exclude": {
+    "out": true,
+    ".next": true
+  },
+  "search.exclude": {
+    "out": true,
+    ".next": true
+  },
+  "javascript.validate.enable": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
