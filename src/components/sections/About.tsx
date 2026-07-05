@@ -8,7 +8,7 @@ import { FolderOpen, Code, GraduationCap, Award } from 'lucide-react';
 const stats = [
   { icon: FolderOpen, label: 'Projetos', value: '10+' },
   { icon: Code, label: 'Tecnologias', value: '15+' },
-  { icon: Award, label: 'Certificados', value: '20+' },
+  { icon: Award, label: 'Certificados', value: '4+' },
   { icon: GraduationCap, label: 'Anos Estudando', value: '3+' },
 ];
 

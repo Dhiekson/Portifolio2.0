@@ -9,8 +9,8 @@ const nextConfig = {
     unoptimized: true,
   },
 
-  basePath: isProd ? "/portfolio" : "",
-  assetPrefix: isProd ? "/portfolio/" : "",
+  basePath: isProd ? "/Portifolio2.0" : "",
+  assetPrefix: isProd ? "/Portifolio2.0/" : "",
 
   compiler: {
     removeConsole: isProd,

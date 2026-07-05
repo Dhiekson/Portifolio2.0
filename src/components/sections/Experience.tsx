@@ -10,15 +10,15 @@ const experiences = [
     description: 'Formação em desenvolvimento de sistemas, aprendizado de várias tecnologias e conceitos de programação.',
   },
   {
-    title: 'Desenvolvimento Mobile',
-    period: '2023 - Presente',
-    description: 'Criação de aplicativos com React Native e Expo, integração com APIs e bancos de dados.',
-  },
-  {
-    title: 'Desenvolvimento Web',
-    period: '2023 - Presente',
-    description: 'Desenvolvimento de aplicações web completas com Next.js, React e TypeScript.',
-  },
+  title: 'Desenvolvimento Mobile',
+  period: '2023 - Presente',
+  description: 'Desenvolvimento de aplicativos Android e iOS utilizando React Native, Expo e TypeScript, com integração ao Supabase, Firebase e APIs REST.',
+},
+{
+  title: 'Desenvolvimento Web',
+  period: '2023 - Presente',
+  description: 'Desenvolvimento de aplicações web full stack utilizando Next.js, React, TypeScript e Supabase, criando interfaces modernas, responsivas e de alta performance.',
+},
 ];
 
 export default function Experience() {

@@ -41,7 +41,7 @@ const contactItems = [
     icon: FaInstagram,
     title: 'Instagram',
     value: '@dhiekson',
-    link: '#'
+    link: 'https://www.instagram.com/dhieksonnunes/'
   },
 ];
 
