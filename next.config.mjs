@@ -1,14 +1,23 @@
 /** @type {import('next').NextConfig} */
+
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  output: 'export',
+
+  output: "export",
+  trailingSlash: true,
+
   images: {
-    domains: ['github.com'],
     unoptimized: true,
   },
+
+  basePath: isProd ? "/portfolio" : "",
+  assetPrefix: isProd ? "/portfolio/" : "",
+
   compiler: {
-    removeConsole: process.env.NODE_ENV === 'production',
+    removeConsole: process.env.NODE_ENV === "production",
   },
 };
 
