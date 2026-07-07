@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
@@ -55,12 +56,14 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
           transition={{ delay: 0.2 }}
           className="mb-16"
         >
-          <div className="aspect-video bg-gradient-to-br from-blue-500/20 via-purple-500/20 to-pink-500/20 rounded-2xl flex items-center justify-center overflow-hidden">
+          <div className="aspect-video bg-gradient-to-br from-blue-500/20 via-purple-500/20 to-pink-500/20 rounded-2xl flex items-center justify-center overflow-hidden relative">
             {project.image || project.screenshots?.[0] ? (
-              <img
-                src={project.image || project.screenshots?.[0]}
+              <Image
+                src={project.image || project.screenshots?.[0] || ''}
                 alt={`${project.name} screenshot`}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 75vw"
               />
             ) : (
               <span className="text-8xl opacity-50">💻</span>

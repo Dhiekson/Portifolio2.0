@@ -113,7 +113,7 @@ export const projects: Project[] = [
 
   status: 'Concluído',
 
-  year: 2025,
+  year: 2026,
 
   category: 'Mobile',
 

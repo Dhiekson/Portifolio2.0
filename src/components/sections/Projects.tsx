@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -44,10 +45,12 @@ export default function Projects() {
               <Card className="h-full border-0 overflow-hidden bg-card/50 hover:shadow-2xl transition-all duration-300 group">
                 <div className="h-48 bg-gradient-to-br from-blue-500/30 via-purple-500/30 to-pink-500/30 flex items-center justify-center relative overflow-hidden">
                   {project.image || project.screenshots?.[0] ? (
-                    <img
-                      src={project.image || project.screenshots?.[0]}
+                    <Image
+                      src={project.image || project.screenshots?.[0] || ''}
                       alt={`${project.name} screenshot`}
-                      className="absolute inset-0 w-full h-full object-cover"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   ) : (
                     <div className="text-6xl opacity-30 group-hover:scale-110 transition-transform duration-500">
