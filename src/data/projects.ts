@@ -67,7 +67,7 @@ export const projects: Project[] = [
   technologies: [
     'React Native',
     'Expo',
-    'TypeScript',
+    'JavaScript',
     'Supabase',
     'PostgreSQL'
   ],
