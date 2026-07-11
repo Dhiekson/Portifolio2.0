@@ -1,6 +1,8 @@
-const isProd = process.env.NODE_ENV === "production";
-
 /** @type {import('next').NextConfig} */
+
+// Detecta se o build está sendo executado pelo GitHub Actions
+const isGitHubPages = process.env.GITHUB_ACTIONS === "true";
+
 const nextConfig = {
   output: "export",
   trailingSlash: true,
@@ -9,11 +11,12 @@ const nextConfig = {
     unoptimized: true,
   },
 
-  basePath: isProd ? "/Portifolio2.0" : "",
-  assetPrefix: isProd ? "/Portifolio2.0/" : "",
+
+  basePath: isGitHubPages ? "/Portifolio2.0" : "",
+  assetPrefix: isGitHubPages ? "/Portifolio2.0/" : "",
 
   compiler: {
-    removeConsole: isProd,
+    removeConsole: process.env.NODE_ENV === "production",
   },
 };
 
