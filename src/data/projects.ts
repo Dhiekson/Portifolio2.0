@@ -121,7 +121,6 @@ export const projects: Project[] = [
 
     links: {
       github: 'https://github.com/Dhiekson/PlanejaPlus',
-      apk: 'https://github.com/Dhiekson/Portifolio2.0/releases/download/v1.4.4/PlanejaPlus-v1.4.4.apk',
     },
   },
 ];
