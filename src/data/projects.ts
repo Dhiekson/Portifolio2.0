@@ -20,11 +20,6 @@ export interface Project {
   year: number;
   category: string;
   image?: string;
-  links: {
-    github: string;
-    apk?: string;
-    deploy?: string;
-  };
   screenshots?: string[];
 }
 
@@ -118,9 +113,5 @@ export const projects: Project[] = [
     category: 'Mobile',
 
     image: '/images/planejaplus.png',
-
-    links: {
-      github: 'https://github.com/Dhiekson/PlanejaPlus',
-    },
   },
 ];
