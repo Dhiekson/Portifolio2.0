@@ -4,8 +4,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { Github, ExternalLink, ChevronLeft, Download, ArrowLeft } from 'lucide-react';
-import Link from 'next/link';
+import {ChevronLeft} from 'lucide-react';
 import type { Project } from '@/data/projects';
 
 interface ProjectDetailsProps {
@@ -209,43 +208,6 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
                 </div>
               </div>
             )}
-
-            <div className="bg-card/50 p-6 rounded-2xl border border-border/50">
-              <h3 className="text-xl font-bold mb-4">Links</h3>
-              <div className="flex flex-col gap-3">
-                {project.links.github && (
-                  <a
-                    href={project.links.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 px-4 py-3 rounded-lg bg-secondary hover:bg-primary transition-all duration-300"
-                  >
-                    <Github size={20} />
-                    <span>GitHub</span>
-                  </a>
-                )}
-                {project.links.apk && (
-                  <a
-                    href={project.links.apk}
-                    className="flex items-center gap-3 px-4 py-3 rounded-lg bg-secondary hover:bg-primary transition-all duration-300"
-                  >
-                    <Download size={20} />
-                    <span>Download APK</span>
-                  </a>
-                )}
-                {project.links.deploy && (
-                  <a
-                    href={project.links.deploy}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 px-4 py-3 rounded-lg bg-secondary hover:bg-primary transition-all duration-300"
-                  >
-                    <ExternalLink size={20} />
-                    <span>Ver Deploy</span>
-                  </a>
-                )}
-              </div>
-            </div>
           </motion.div>
         </div>
       </div>
