@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ExternalLink, Eye, Github, ChevronRight } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import { projects } from '@/data/projects';
 
@@ -87,17 +87,6 @@ export default function Projects() {
                         <ChevronRight size={16} className="group-hover/btn:translate-x-1 transition-transform" />
                       </Button>
                     </Link>
-                    
-                    {project.links.github && (
-                      <a
-                        href={project.links.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="p-2 rounded-lg bg-secondary hover:bg-primary transition-all duration-300"
-                      >
-                        <Github size={18} />
-                      </a>
-                    )}
                   </div>
                 </CardContent>
               </Card>
